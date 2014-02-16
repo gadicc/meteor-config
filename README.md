@@ -31,3 +31,23 @@ which is called as `allowCallBack(key, value)`.
 In both cases, return `true` to allow the set, and `false` to deny.
 Note, `this` will be as per the regular this keyword in Meteor Methods,
 so you can use `this.userId`.
+
+e.g.
+
+For all keys:
+
+```js
+config.allow = function(key, value) {
+	var user = Meteor.users.findOne(this.userId);
+	return !!user.isAdmin;
+}
+```
+
+For specific keys:
+
+```js
+config.add('serverStopped', false, function(key, value) {
+	var user = Meteor.users.findOne(this.userId);
+	return !!user.isAdmin;	
+});
+```
