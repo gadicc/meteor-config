@@ -13,7 +13,7 @@ config = {
 			return;
 		this.keys[key] = initValue;
 		this.allows[key] = allow;
-		this.col.insert( { key: key, value: value } );
+		this.col.insert( { key: key, value: initValue } );
 	},
 	set: function(key, value) {
 		if (typeof(this.keys[key]) == 'undefined')
