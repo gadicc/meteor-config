@@ -3,7 +3,7 @@
     "description": "Set config variables, stored in db, client set w/ security",
     "homepage": "https://github.com/gadicohen/meteor-config",
     "author": "Gadi Cohen <dragon@wastelands.net>",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "git": "https://github.com/gadicohen/meteor-config.git",
 	"packages": {
 	}

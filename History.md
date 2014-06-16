@@ -1,6 +1,6 @@
 ## vNEXT
 
-## v0.0.2
+## v0.0.3
 
 * Fix `initValue` not working in `add` (thanks andrefgneves, #1)
 
