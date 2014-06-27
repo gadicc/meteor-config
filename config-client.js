@@ -16,7 +16,7 @@ config = {
 	get: function(key) {
 		if (typeof(this.keys[key]) == 'undefined') {
 			if (!this.sub.ready())
-				throw new Eror('[config] subscription not ready yet, no "'+key+'".');
+				throw new Error('[config] subscription not ready yet, no "'+key+'".');
 			throw new Error('[config] Use config.add("'+key+'", initValue) on server first.');
 		}
 		return this.keys[key];
